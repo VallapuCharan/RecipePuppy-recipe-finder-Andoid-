@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.saicharanreddy.hw04_group15.mainFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/dish"
+    android:id="@+id/Dish"
+    android:textStyle="bold"
+    android:textSize="45px"
+            android:layout_gravity="left|top"
+            android:layout_above="@+id/addIngreText"
+            android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addIngredients"
+        android:id="@+id/addIngreText"
+        android:textStyle="bold"
+        android:textSize="45px"
+
+        android:layout_gravity="left|center_vertical"
+        android:layout_below="@+id/dishInput"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp" />
+
+        <EditText
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/dishInput"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/Dish" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/addIngreText"
+            android:layout_alignParentStart="true"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/searchButton" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/searchButton"
+            android:id="@+id/searchButton"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/addIngreText" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>
+    <!--
+      Assignment : Homework 04
+      File Name : HW04_Group15.zip
+      Full Name: Sai Charan Reddy Vallapureddy, Manideep Reddy Nukala
+      -->
